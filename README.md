@@ -1,6 +1,6 @@
 # LinkedIn Resume Builder 🚀
 
-![image.png](images/"ChatGPT Image Jun 9, 2025, 02_06_26 AM".png)
+![image.png](images/linkedin_resume_agent_image.png)
 An intelligent AI-powered system that automatically extracts professional data from LinkedIn profiles and generates tailored, professional resumes using CrewAI's multi-agent framework.
 
 ## 🌟 Features
