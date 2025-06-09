@@ -43,7 +43,7 @@ LinkedIn URL → Data Extraction → Resume Generation → Final Resume Output
 
 1. **Clone the repository**:
    ```bash
-   git clone [<repository-url>](https://github.com/achuajays/LinkedIn-Resume-Builder.git)
+   git clonehttps://github.com/achuajays/LinkedIn-Resume-Builder.git
    cd linkedin-resume-builder
    ```
 
