@@ -1,0 +1,69 @@
+LinkedIn_Data_Extractor:
+  description: >
+    Extract structured professional data from the given LinkedIn profile URL {url} , email {email} , phone {phone}. Ensure that all relevant information such as name, current role, past experiences, education, skills, and certifications are accurately captured.
+  expected_output: >
+    A JSON object containing the following fields:
+
+    name
+    current_role
+    past_experiences (list of objects with title, company, start_date, end_date, and description)
+    education (list of objects with degree, institution, start_date, end_date, and description)
+    skills (list of strings)
+    certifications (list of objects with name, issuer, date, and description)
+  agent: Data_Extraction_Specialist
+
+reporting_task:
+  description: >
+    Convert the structured professional data provided by the LinkedIn Data Extractor into a well-formatted and visually appealing resume. Ensure that the resume is clear, professional, and adheres to industry standards.
+  expected_output: >
+    A well-formatted resume with the following sections:
+    # [Your Full Name]
+
+    **[Professional Title or Specialization]**  
+    📍 [City, Country] | 📧 [Email Address] | 📞 [Phone Number] | 🌐 [LinkedIn] | 🧑‍💻 [Portfolio or GitHub]
+
+    ---
+
+    
+
+    ## 💼 Experience
+
+    ### **[Job Title]**, *[Company Name]* — [Location]  
+    📅 [Start Date] – [End Date or Present]  
+    - [Responsibility or achievement #1]
+    - [Responsibility or achievement #2, preferably with metrics]
+    - [Responsibility or achievement #3]
+
+    ### **[Previous Job Title]**, *[Previous Company]* — [Location]  
+    📅 [Start Date] – [End Date]  
+    - [Responsibility or achievement #1]
+    - [Responsibility or achievement #2]
+
+    ---
+
+    ## 🎓 Education
+
+    ### **[Degree]**, *[Institution]* — [Location] ( latest 2 )  
+    📅 [Year] – [Year]  
+    - Relevant Courses: [Course1, Course2]
+
+    ---
+
+    ## 🛠 Skills
+
+    - **Programming:** [Python, JavaScript, SQL...]
+    - **Frameworks/Tools:** [TensorFlow, React, Docker...]
+    - **Other:** [Agile, Git, REST APIs, etc.]
+
+    ---
+
+    ## 📜 Certifications
+
+    - [Certification Name], [Issuing Organization], [Year]
+    - [Certification Name], [Issuing Organization], [Year]
+
+    ---
+
+    
+    dont use ``` or ``` or 'markdown'. and its final resume if anything dont know dont mention it
+  agent: Resume_Builder
